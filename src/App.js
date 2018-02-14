@@ -99,7 +99,7 @@ class App extends Component {
 
           <div className="form-group">
             <label htmlFor="name">Nome do Cliente</label>
-            <input id="name" name="name" required className="form-control" type="text" defaultValue={this.state.name} onChange={this.handleInputChange}/>
+            <input id="name" name="name" pattern=".*\w+\s+\w.*" required  className="form-control" type="text" defaultValue={this.state.name} onChange={this.handleInputChange}/>
           </div>
 
          <div className="form-group">
@@ -118,7 +118,7 @@ class App extends Component {
             <label htmlFor="creditLimit">Limite de Crédito</label>
               <div className="input-group"> 
                 <div class="input-group-prepend">
-                  <span class="input-group-text">R$ </span>
+                  <span className="input-group-text">R$ </span>
                 </div>
                 <input id="creditLimit" 
                   name="creditLimit"
