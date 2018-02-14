@@ -40,6 +40,8 @@ class App extends Component {
       })
     })
 
+    this.clearForm();
+
     event.preventDefault();
   }
 
