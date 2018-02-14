@@ -119,7 +119,7 @@ class App extends Component {
           <div className="form-group">
             <label htmlFor="creditLimit">Limite de Crédito</label>
               <div className="input-group"> 
-                <div class="input-group-prepend">
+                <div className="input-group-prepend">
                   <span className="input-group-text">R$ </span>
                 </div>
                 <input id="creditLimit" 
