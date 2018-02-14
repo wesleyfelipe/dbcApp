@@ -42,6 +42,8 @@ class App extends Component {
 
     this.clearForm();
 
+    document.getElementById("customerForm").reset();
+
     event.preventDefault();
   }
 
@@ -91,7 +93,7 @@ class App extends Component {
         </header>
         
 
-        <form className="AppForm" onSubmit={this.handleSubmit}>
+        <form  id="customerForm"  className="AppForm" onSubmit={this.handleSubmit}>
 
           <p className="App-intro">
             Utilize este formulário para cadastrar os seus clientes.
